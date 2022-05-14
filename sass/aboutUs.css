@@ -1,0 +1,922 @@
+@font-face {
+  font-family: "icons";
+  src: url("../assets/fonts/icomoon/fonts/icomoon.eot?e9bd");
+  src: url("../assets/fonts/icomoon/fonts/icomoon.eot") format("embedded-opentype"), url("../assets/fonts/icomoon/fonts/icomoon.ttf?e9bd") format("truetype"), url("../assets/fonts/icomoon/fonts/icomoon.woff?e9bd") format("woff"), url("../assets/fonts/icomoon/fonts/icomoon.svg?e9bd#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Full-Star";
+  src: url("../assets/fonts/stars/fonts/icomoon.eot?e9bd");
+  src: url("../assets/fonts/stars/fonts/icomoon.eot") format("embedded-opentype"), url("../assets/fonts/stars/fonts/icomoon.ttf?e9bd") format("truetype"), url("../assets/fonts/stars/fonts/icomoon.woff?e9bd") format("woff"), url("../assets/fonts/stars/fonts/icomoon.svg?e9bd#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "icon-menu";
+  src: url("../assets/fonts/menu/fonts/icomoon.eot?e9bd");
+  src: url("../assets/fonts/menu/fonts/icomoon.eot") format("embedded-opentype"), url("../assets/fonts/menu/fonts/icomoon.ttf?e9bd") format("truetype"), url("../assets/fonts/menu/fonts/icomoon.woff?e9bd") format("woff"), url("../assets/fonts/menu/fonts/icomoon.svg?e9bd#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Libre Baskerville Bold";
+  src: url("../assets/fonts/LibreBaskerville-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Libre Baskerville Regular";
+  src: url("../assets/fonts/LibreBaskerville-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Libre Baskerville Italic";
+  src: url("../assets/fonts/LibreBaskerville-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: block;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: "header" "mensajeOne" "servicios" "mensaje2" "newProject" "ejemplos" "reviews" "contacto" "footer";
+}
+main header {
+  height: 7.5rem;
+  width: 98%;
+  display: grid;
+  grid-area: "header";
+  margin-bottom: 2.187rem;
+  grid-template-columns: [col-1-start] 2fr [col-1-end col-2-start] 2fr [col-2-end col3-start] 2fr [col-3-end];
+  grid-template-rows: 7.5rem;
+  grid-template-areas: "logo .. menuMovil";
+}
+main header .logo {
+  display: inline-block;
+  padding: 0.312rem;
+  margin: 0.312rem;
+  margin: auto;
+  height: 80%;
+  grid-area: logo;
+}
+main header .logo img {
+  height: 100%;
+  width: auto;
+}
+main header .menu__movil {
+  display: inline-block;
+  grid-area: menuMovil;
+  font-family: "icon-menu";
+  text-align: center;
+}
+main header .menu__movil .icon-menu {
+  display: inline;
+  font-size: 7.187rem;
+  color: black;
+}
+main .header-movil {
+  height: 7.5rem;
+  width: 98%;
+  display: grid;
+  grid-area: "header";
+  margin-bottom: 2.187rem;
+  grid-template-columns: [col-1-start] 2fr [col-1-end col-2-start] 2fr [col-2-end col3-start] 2fr [col-3-end];
+  grid-template-rows: 7.5rem;
+  grid-template-areas: "logo .. menuMovil";
+}
+main .header-movil .logo {
+  display: inline-block;
+  padding: 0.312rem;
+  margin: 0.312rem;
+  margin: auto;
+  height: 80%;
+  grid-area: logo;
+}
+main .header-movil .logo img {
+  height: 100%;
+  width: auto;
+}
+main .header-movil .menu__movil {
+  display: inline-block;
+  grid-area: menuMovil;
+  font-family: "icon-menu";
+  text-align: center;
+}
+main .header-movil .menu__movil .icon-menu {
+  display: inline;
+  font-size: 7.187rem;
+  color: black;
+}
+main .header-desktop {
+  display: none;
+}
+main .welcome {
+  height: 28.125rem;
+  width: 90%;
+  margin: 0 auto;
+  background: #5390D9;
+  border-radius: 10%;
+  display: grid;
+  grid-area: "mensajeOne";
+  grid-template-columns: [col-1-start] 2fr [col-1-end];
+  grid-template-rows: 7.5rem 7.5rem 7.5rem;
+  grid-template-areas: "mensajeA" "mensajeB" "mensajeC";
+}
+main .welcome .presentation {
+  width: 90%;
+  margin: auto;
+}
+main .welcome .presentation .title {
+  grid-area: "mensajeA";
+  font-family: "Libre Baskerville Italic";
+  text-align: left;
+  font-size: 2.5rem;
+  margin: 1.125rem;
+  margin-left: 0.25rem;
+  padding: 1.125rem;
+  color: black;
+}
+main .welcome .presentation .inspiration {
+  width: 100%;
+  grid-area: "mensajeB";
+  font-family: "Libre Baskerville Regular";
+  font-size: 1rem;
+  color: black;
+  text-align: left;
+  font-size: 0.875rem;
+  margin: 0.375rem;
+}
+main .welcome .presentation .works {
+  grid-area: "mensajeC";
+  font-family: "Libre Baskerville Italic";
+  display: block;
+  width: 90%;
+  height: 4.125rem;
+  margin: 0 auto;
+  background: #80FFD8;
+  border: none;
+  font-size: 1.937rem;
+  margin-top: 2.562rem;
+  color: black;
+  border-radius: 50px;
+}
+main .welcome .presentation .works:active {
+  background: #5E60CE;
+  color: white;
+}
+main .messageOne {
+  margin-top: 2.187rem;
+  width: 100%;
+}
+main .messageOne .quote1 {
+  margin-bottom: 2.187rem;
+  width: 90%;
+  margin: 0 auto;
+}
+main .messageOne .quote1 h2 {
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  font-family: "Libre Baskerville Bold";
+  text-align: center;
+}
+main .messageOne .quote1 .comunicado {
+  font-family: "Libre Baskerville Regular";
+  font-size: 0.75rem;
+  text-align: left;
+  margin: 0 0.625rem;
+  margin-bottom: 1.25rem;
+}
+main .servicios {
+  width: 90%;
+  height: 33rem;
+  margin: 0 auto;
+  margin-top: 0.937rem;
+  margin-bottom: 0.937rem;
+}
+main .servicios .servicios--servicio {
+  width: 100%;
+  height: 9.0625rem;
+  background: #4DA8ED;
+  margin-top: 1.562rem;
+  margin-bottom: 1.562rem;
+}
+main .servicios .servicios--servicio:hover {
+  background: #48BFE3;
+}
+main .servicios .servicios--servicio .servicios--servicio__title {
+  text-align: center;
+  font-family: "Libre Baskerville Bold";
+  font-size: 1.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+main .servicios .servicios--servicio .servicios--servicio__desc {
+  text-align: justify;
+  font-family: "Libre Baskerville Regular";
+  font-size: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+main .perfiles {
+  width: 90%;
+  height: 100rem;
+  margin: 0 auto;
+  margin-top: 0.937rem;
+  margin-bottom: 0.937rem;
+}
+main .perfiles .perfiles--title {
+  text-align: center;
+  font-size: 1.625rem;
+  color: #6930C3;
+  padding-top: 0.625rem;
+  padding: 1.25rem 0;
+  font-family: "Libre Baskerville Bold";
+}
+main .perfiles .perfiles--subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Libre Baskerville Bold";
+}
+main .perfiles .perfiles--user {
+  width: 100%;
+  height: 21.875rem;
+  margin-top: 0.937rem;
+  margin-bottom: 0.937rem;
+}
+main .perfiles .perfiles--user .perfiles--user__foto {
+  width: 60%;
+  height: 60%;
+  margin: 0 auto;
+  background-image: url("../assets/img/perfil.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 0.937rem;
+  margin-bottom: 0.937rem;
+  border-radius: 50%;
+}
+main .perfiles .perfiles--user .perfiles--user__name {
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5rem;
+  color: #7400B8;
+}
+main .perfiles .perfiles--user .perfiles--user__rol,
+main .perfiles .perfiles--user .perfiles--user__social {
+  text-align: center;
+  line-height: 25px;
+  font-size: 1.25rem;
+  color: black;
+}
+main .projects {
+  width: 90%;
+  height: 92.687rem;
+  margin: 2.187rem auto;
+  margin-bottom: 0.937rem;
+}
+main .projects .projects--invitation {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #6930C3;
+  padding-top: 0.625rem;
+  padding: 1.25rem 0;
+  font-family: "Libre Baskerville Bold";
+}
+main .projects .projects--title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #6930C3;
+  padding-top: 0.625rem;
+  font-family: "Libre Baskerville Bold";
+}
+main .projects .projects--img {
+  width: 100%;
+  height: 21.875rem;
+  display: inline-block;
+  margin: 2.937rem 0;
+}
+main .projects .projects--img img {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0.937rem;
+}
+main .projects .projects--img .projects--img__name {
+  text-align: left;
+  font-size: 1.5rem;
+  color: #5390D9;
+  font-family: "Libre Baskerville Italic";
+}
+main .reviews::-webkit-scrollbar {
+  /*display: none; */
+}
+main .reviews {
+  /* IE and Edge */
+  /*-ms-overflow-style: none;
+  /* Firefox */
+  /*scrollbar-width: none;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 90%;
+  height: 18.75rem;
+  margin: 2.187rem auto;
+  margin-top: 0.937rem;
+}
+main .reviews ::-webkit-scrollbar {
+  display: none;
+}
+main .reviews .reviews--tarjetas {
+  min-width: 20rem;
+  height: 12.625rem;
+  background: #64DFDF;
+  border: 0.125rem solid #48BFE3;
+  display: inline-block;
+  margin: 1.562rem 1.562rem;
+  padding-top: 4.062rem;
+  padding-left: 0.312rem;
+  position: relative;
+}
+main .reviews .reviews--tarjetas:hover {
+  background: #5390D9;
+}
+main .reviews .reviews--tarjetas:hover .reviews--tarjetas__user,
+main .reviews .reviews--tarjetas:hover .reviews--tarjetas__rol,
+main .reviews .reviews--tarjetas:hover .reviews--tarjetas__mensaje {
+  color: white;
+}
+main .reviews .reviews--tarjetas .reviews--tarjetas__perfil {
+  display: inline-block;
+  width: 25%;
+  position: absolute;
+  top: -1.562rem;
+  left: 0.937rem;
+}
+main .reviews .reviews--tarjetas .reviews--tarjetas__perfil img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 10%;
+}
+main .reviews .reviews--tarjetas .reviews--tarjetas__user {
+  padding: 0.937rem;
+  font-size: 0.875rem;
+  font-family: "Libre Baskerville Bold";
+  -moz-text-align-last: left;
+       text-align-last: left;
+  color: black;
+}
+main .reviews .reviews--tarjetas .reviews--tarjetas__rol {
+  padding: 0.937rem;
+  font-size: 0.875rem;
+  font-family: "Libre Baskerville Regular";
+  -moz-text-align-last: left;
+       text-align-last: left;
+  color: black;
+}
+main .reviews .reviews--tarjetas .reviews--tarjetas__mensaje {
+  padding: 0.937rem;
+  font-size: 0.875rem;
+  font-family: "Libre Baskerville Regular";
+  -moz-text-align-last: left;
+       text-align-last: left;
+  color: black;
+}
+main .tools {
+  height: 10.875rem;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1.562rem;
+}
+main .tools .tools--title {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #6930C3;
+  padding-top: 0.625rem;
+  font-family: "Libre Baskerville Regular";
+}
+main .tools .tools--tool {
+  margin-top: 0.937rem;
+  margin-right: 0.3125rem;
+  margin-left: 0.3125rem;
+  display: inline-block;
+  width: 20%;
+  height: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main .tools .une {
+  background-image: url("../assets/img/html.jpeg");
+}
+main .tools .two {
+  background-image: url("../assets/img/css.png");
+}
+main .tools .three {
+  background-image: url("../assets/img/sass.png");
+}
+main .tools .four {
+  background-image: url("../assets/img/figma.png");
+}
+main .contact {
+  height: 50rem;
+  width: 90%;
+  margin: 0 auto;
+}
+main .contact .contact--invite {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #6930C3;
+  padding-top: 0.625rem;
+  font-family: "Libre Baskerville Regular";
+}
+main .contact .contact--invitation {
+  text-align: center;
+  font-size: 1.625rem;
+  color: #6930C3;
+  padding-top: 0.625rem;
+  padding: 1.25rem 0;
+  font-family: "Libre Baskerville Bold";
+}
+main .contact .contact--phone {
+  width: 100%;
+  height: 7.5rem;
+  margin: 1.562rem 0;
+}
+main .contact .contact--phone .contact--action {
+  display: inline-block;
+  height: 2.5rem;
+  line-height: 1.25rem;
+  padding: 0.937rem;
+  margin-right: 0.625rem;
+  margin-top: 0.625rem;
+}
+main .contact .contact--phone .contact--action .contact--action__phone {
+  font-family: "icons";
+  color: black;
+  font-size: 70px;
+  text-align: center;
+}
+main .contact .contact--phone .contact--info {
+  display: inline-block;
+  line-height: 1.25rem;
+  padding: 0.937rem;
+  margin-bottom: 0.937rem;
+}
+main .contact .contact--phone .contact--info .contact--info__number {
+  line-height: 2.5rem;
+  font-size: 1rem;
+}
+main .contact .contact--mail {
+  width: 100%;
+  height: 7.5rem;
+  margin: 1.562rem 0;
+}
+main .contact .contact--mail .contact--action {
+  display: inline-block;
+  height: 2.5rem;
+  line-height: 1.25rem;
+  padding: 0.937rem;
+  margin-right: 0.625rem;
+  margin-top: 0.625rem;
+}
+main .contact .contact--mail .contact--action .contact--action__mail {
+  font-family: "icons";
+  color: black;
+  font-size: 4.375rem;
+  text-align: center;
+}
+main .contact .contact--mail .contact--info {
+  display: inline-block;
+  line-height: 1.25rem;
+  padding: 0.937rem 0;
+  margin-bottom: 0.937rem;
+}
+main .contact .contact--mail .contact--info .contact--info__mail {
+  line-height: 2.5rem;
+  font-size: 0.875rem;
+  font-family: "Libre Baskerville Regular";
+}
+main .contact .buzon {
+  width: 100%;
+  height: 21.875rem;
+}
+main .contact .buzon label {
+  display: block;
+  margin-top: 1.562rem;
+  font-size: 1.5rem;
+  font-family: "Libre Baskerville Bold";
+}
+main .contact .buzon input {
+  display: block;
+  height: 1.875rem;
+  width: 100%;
+  margin-top: 0.312rem;
+  border: 0.125rem solid #ccc;
+}
+main .contact .buzon .buzon--message {
+  height: 6.625rem !important;
+  width: 100% !important;
+  margin-top: 0.625rem;
+}
+
+.pie {
+  height: 50rem;
+  width: 100%;
+  margin: 0 auto;
+  background: #6930C3;
+  border-radius: 3.125rem 3.125rem 0 0;
+}
+.pie .pie--logo {
+  padding: 0.312rem;
+  margin: 0.937rem;
+  height: 18%;
+  width: 90%;
+}
+.pie .pie--logo img {
+  display: inline-block;
+  height: 100%;
+  width: auto;
+  padding-top: 0.312rem;
+  padding-left: 1.25rem;
+}
+.pie .pie--logo .pie--company {
+  font-size: 2.5rem;
+  float: right;
+  padding-top: 3.125rem;
+  padding-right: 0.937rem;
+}
+.pie .pie--links__Us {
+  height: 8.437rem;
+  width: 90%;
+  margin: 2.187rem auto;
+}
+.pie .pie--links__Us a {
+  text-decoration: none;
+  display: block;
+  padding: 0.625rem;
+  color: white;
+  font-size: 1.5rem;
+}
+.pie .pie--links__Help {
+  height: 8.437rem;
+  width: 90%;
+  margin: 2.187rem auto;
+}
+.pie .pie--links__Help a {
+  text-decoration: none;
+  display: block;
+  padding: 0.625rem;
+  color: white;
+  font-size: 1.5rem;
+}
+.pie .pie--links__Proves {
+  height: 8.437rem;
+  width: 90%;
+  margin: 2.187rem auto;
+}
+.pie .pie--links__Proves a {
+  text-decoration: none;
+  display: block;
+  padding: 0.625rem;
+  color: white;
+  font-size: 1.5rem;
+}
+.pie p {
+  text-align: center;
+  font-size: 0.875rem;
+  color: white;
+  padding-top: 0.875rem;
+}
+
+@media (min-width: 83.75rem) {
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .header-movil {
+    background: red;
+    display: none !important;
+  }
+  main .header-desktop {
+    display: inline-block !important;
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: 0.937rem;
+    text-align: center;
+    background: #5390D9;
+  }
+  main .header-desktop .logo-loco {
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+    width: 50px;
+    padding: 0.937rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  main .header-desktop .logo-loco img {
+    height: 100%;
+    width: 100%;
+  }
+  main .header-desktop .header-movil__menu {
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+    padding: 0.937rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  main .header-desktop .header-movil__menu .menu-lista {
+    margin: 0 auto;
+    vertical-align: middle;
+  }
+  main .header-desktop .header-movil__menu .menu-lista .menu-lista__item {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  main .header-desktop .header-movil__menu .menu-lista .menu-lista__item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  main .header-desktop .header-movil__menu .menu-lista .menu-lista__item .works {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    border-radius: 50px;
+    width: 175px;
+    background: #80FFD8;
+    font-family: "Libre Baskerville Bold";
+  }
+  main .welcome {
+    width: 100%;
+    height: 500px;
+    border-radius: 0px;
+    background: #48BFE3;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  main .welcome .presentation {
+    width: 90%;
+    height: 400px;
+    margin: 50px auto;
+    padding: 0;
+    line-height: 80px;
+  }
+  main .welcome .presentation .title {
+    font-size: 48px;
+    text-align: center;
+  }
+  main .welcome .presentation .inspiration {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  main .welcome .presentation .works {
+    width: 22%;
+    text-align: center;
+  }
+  main .messageOne {
+    height: 300px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2.187rem;
+  }
+  main .messageOne .quote1 {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 25px 0;
+  }
+  main .messageOne .quote1 h2 {
+    font-size: 2.5rem;
+    padding-top: 50px;
+    text-align: center;
+    color: #7400B8;
+  }
+  main .messageOne .quote1 .comunicado {
+    font-size: 1.5rem;
+    padding-top: 25px;
+    text-align: left;
+  }
+  main .messageOne .cartaMensaje {
+    float: right;
+    height: 25%;
+    width: 45%;
+    margin: 125px 0;
+    padding: 0;
+  }
+  main .messageOne .cartaMensaje .perfil {
+    height: 100%;
+    width: 20%;
+  }
+  main .messageOne .cartaMensaje .perfil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  main .servicios {
+    height: 12rem;
+    text-align: center;
+  }
+  main .servicios .servicios--servicio {
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+    margin: 0 1.125rem;
+  }
+  main .servicios .servicios--servicio .servicios--servicio__title {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  main .servicios .servicios--servicio .servicios--servicio__desc {
+    font-size: 1.5rem;
+  }
+  main .perfiles {
+    height: 80rem;
+    text-align: center;
+  }
+  main .perfiles .perfiles--user {
+    display: inline-block;
+    width: 40%;
+    height: 33.875rem;
+  }
+  main .perfiles .perfiles--user p {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  main .perfiles .perfiles--user .perfiles--user__foto {
+    width: 50%;
+    height: 60%;
+  }
+  main .perfiles .perfiles--user .perfiles--user__name {
+    font-size: 2.5rem;
+  }
+  main .perfiles .perfiles--user .perfiles--user__rol {
+    font-size: 2.25rem;
+  }
+  main .perfiles .perfiles--user .perfiles--user__social {
+    font-size: 2.15rem;
+  }
+  main .new--project .new--project__mensaje1 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 2.75rem;
+  }
+  main .new--project .new--project__moreInfo {
+    height: 4.75rem;
+    width: 20%;
+  }
+  main .new--project .new--project__moreInfo a {
+    font-size: 1.5rem;
+  }
+  main .new--project .new--project__meetTheTeam {
+    height: 4.75rem;
+    width: 20%;
+    margin-top: 3rem;
+  }
+  main .new--project .new--project__meetTheTeam a {
+    font-size: 1.5rem;
+  }
+  main .projects {
+    height: 45rem;
+    text-align: center;
+  }
+  main .projects .projects--invitation {
+    font-size: 2.25rem;
+  }
+  main .projects .projects--title {
+    font-size: 2.5rem;
+  }
+  main .projects .projects--img {
+    display: inline-block;
+    height: 60%;
+    width: 30%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  main .reviews .reviews--tarjetas {
+    padding-left: 3.312rem;
+  }
+  main .tools {
+    height: 31.875rem;
+  }
+  main .tools .tools--title {
+    font-size: 2.25rem;
+  }
+  main .tools .tools--tool {
+    height: 86%;
+    margin-left: 1.3125rem;
+    margin-right: 1.3125rem;
+  }
+  main .tools .three {
+    width: 25%;
+  }
+  main .contact {
+    height: 40rem;
+  }
+  main .contact .contact--invite {
+    font-size: 2.25rem;
+  }
+  main .contact .contact--invitation {
+    font-size: 2.625rem;
+  }
+  main .contact .contact--phone {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    top: 7rem;
+  }
+  main .contact .contact--phone .contact--info .contact--info__number {
+    font-size: 2rem;
+  }
+  main .contact .contact--mail {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    bottom: 163px;
+  }
+  main .contact .contact--mail .contact--info .contact--info__mail {
+    font-size: 1.875rem;
+  }
+  main .contact .buzon {
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    bottom: 80px;
+  }
+
+  .pie {
+    height: 33rem;
+    margin-top: 5rem;
+    border-radius: 0;
+    text-align: right;
+  }
+  .pie .pie--logo h2 {
+    margin-left: 3rem;
+    padding-top: 2.125rem !important;
+  }
+  .pie .pie--links__Us {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .pie .pie--links__Us a {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .pie .pie--links__Help {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .pie .pie--links__Help a {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .pie .pie--links__Proves {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-right: 100px;
+  }
+  .pie .pie--links__Proves a {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .pie p {
+    margin-top: 2rem;
+  }
+}/*# sourceMappingURL=aboutUs.css.map */

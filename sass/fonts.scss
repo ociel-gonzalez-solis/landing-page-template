@@ -1,0 +1,60 @@
+// Estilos generales
+
+@font-face {
+    font-family: 'icons';
+    src: url('../assets/fonts/icomoon/fonts/icomoon.eot?e9bd');
+    src: url('../assets/fonts/icomoon/fonts/icomoon.eot') format('embedded-opentype'),
+        url('../assets/fonts/icomoon/fonts/icomoon.ttf?e9bd') format('truetype'),
+        url('../assets/fonts/icomoon/fonts/icomoon.woff?e9bd') format('woff'),
+        url('../assets/fonts/icomoon/fonts/icomoon.svg?e9bd#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+// FUente de las estrellas llenas y vacias.
+@font-face {
+    font-family: 'Full-Star';
+    src: url('../assets/fonts/stars/fonts/icomoon.eot?e9bd');
+    src: url('../assets/fonts/stars/fonts/icomoon.eot') format('embedded-opentype'), url('../assets/fonts/stars/fonts/icomoon.ttf?e9bd') format('truetype'), url('../assets/fonts/stars/fonts/icomoon.woff?e9bd') format('woff'), url('../assets/fonts/stars/fonts/icomoon.svg?e9bd#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+//Fuente del icono del menú hamburguesa
+@font-face {
+    font-family: 'icon-menu';
+    src: url('../assets/fonts/menu/fonts/icomoon.eot?e9bd');
+    src: url('../assets/fonts/menu/fonts/icomoon.eot') format('embedded-opentype'), url('../assets/fonts/menu/fonts/icomoon.ttf?e9bd') format('truetype'), url('../assets/fonts/menu/fonts/icomoon.woff?e9bd') format('woff'), url('../assets/fonts/menu/fonts/icomoon.svg?e9bd#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+// Fuente de la página en general BOLD
+@font-face {
+    font-family: 'Libre Baskerville Bold';
+    src: url('../assets/fonts/LibreBaskerville-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: block;
+}
+
+// Fuente de la página en general REGULAR
+@font-face {
+    font-family: 'Libre Baskerville Regular';
+    src: url('../assets/fonts/LibreBaskerville-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+// Fuente de la página en general ITALIC
+@font-face {
+    font-family: 'Libre Baskerville Italic';
+    src: url('../assets/fonts/LibreBaskerville-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: block;
+}
